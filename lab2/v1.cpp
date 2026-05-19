@@ -6,7 +6,7 @@
 #include <omp.h>
 using namespace std;
 
-const long N = 40000; 
+const long N = 24000; 
 const double EPS = 1e-5;  
 const double TAU = 1e-5;  
 
@@ -49,7 +49,7 @@ void solve_sequential(const vector<double>& A, const vector<double>& b, vector<d
 
 int main() {
     vector<double> A(N * N), b(N), x(N);
-    omp_set_num_threads(1);
+    omp_set_num_threads(4);
     init(A, b, x);
     
     auto start = chrono::high_resolution_clock::now();

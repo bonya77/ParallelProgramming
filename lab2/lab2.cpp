@@ -5,7 +5,7 @@
 #include <math.h>
 using namespace std;
 
-const long N = 12000; 
+const long N = 24000; 
 const double EPS = 1e-5;  
 const double TAU = 0.01;  
 

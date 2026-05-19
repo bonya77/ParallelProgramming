@@ -54,7 +54,7 @@ void solve_sequential(const vector<double>& A, const vector<double>& b, vector<d
 
 int main() {
     vector<double> A(N * N), b(N), x(N);
-    omp_set_num_threads(8);
+     
     init(A, b, x);
     
     auto start = chrono::high_resolution_clock::now();
